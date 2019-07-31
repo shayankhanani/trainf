@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * { font-family: Arial, Verdana, sans-serif;}
+        h1 { font-family: "Courier New", monospace;} 
+        i { color: green;}
+        i { color: red;} 
+        b { color: pink;}
+        p b { color: blue !important;}
+        p b { color: violet;}
+        p#intro { font-size: 100%;}
+        p { font-size: 75%;}
+    </style>
+    <title>How CSS Rules Cascade</title>
+</head>
+<body>
+    <!-- <h1> will be in courier font because it is more specific than * selector.
+        Paragraph with id tag is more specific so font size will be 100%
+        <i> will be red in color as the last appearing rule will be follow if there
+        are different rules are for same tag.
+        <b> will be in blue color as it is marked as important
+        <p> will have font size of 75%
+    -->
+    <h1>Potatoes</h1>
+    <p id="intro">There are <i>dozens</i> of different <b>potato</b> varieties.</p>
+    <p>They are usually described as early, second early and maincrop potatoes.</p>
+</body>
+</html>
